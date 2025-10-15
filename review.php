@@ -4,9 +4,7 @@
 // ------------------------------------------------------------
 session_start();
 
-// DB接続
-$db = new PDO('mysql:host=localhost;dbname=tourism_review;charset=utf8', 'root', '');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once 'db_connect.php';
 
 // ID取得とレビュー検索
 $review_id = $_GET['id'] ?? null;

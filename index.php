@@ -13,11 +13,7 @@ session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// ------------------------------
-// DB接続設定（MySQL）
-// ------------------------------
-$db = new PDO('mysql:host=localhost;dbname=tourism_review;charset=utf8', 'root', '');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once 'db_connect.php';
 
 // ------------------------------
 // テーブル作成（初回のみ）
