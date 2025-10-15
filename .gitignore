@@ -1,0 +1,21 @@
+# OS・エディタ関連
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# PHP関連（ログ・一時ファイルなど）
+*.log
+*.env
+*.sqlite
+*.sql
+*.bak
+
+# セッションやキャッシュ
+session/
+cache/
+tmp/
+
+# Composer（使っている場合）
+vendor/
+composer.lock
